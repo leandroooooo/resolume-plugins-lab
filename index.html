@@ -6,6 +6,8 @@
   <meta name="description" content="Plugins e ferramentas gratuitas para Resolume Arena, criadas para a comunidade VJ.">
   <meta name="theme-color" content="#090b13">
   <title>Resolume Plugins Lab — Tools for VJs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,12 +17,16 @@
       <span class="brand-mark">R<span>+</span></span>
       <span class="brand-name">RESOLUME <b>PLUGINS LAB</b></span>
     </a>
-    <nav>
+    <nav aria-label="Navegação principal">
       <a href="#plugins" data-i18n="navPlugins">Plugins</a>
       <a href="#about" data-i18n="navAbout">Sobre</a>
+      <a href="https://www.instagram.com/leandrone_x/" target="_blank" rel="noopener">Instagram ↗</a>
       <a href="#support" data-i18n="navSupport">Apoie</a>
     </nav>
-    <button class="lang-button" id="langToggle" type="button" aria-label="Switch language">EN</button>
+    <div class="header-actions">
+      <a class="button button-coffee header-coffee" href="https://pagaum.cafe/leandrosantosss" target="_blank" rel="noopener" data-i18n="coffeeTop">Pague um café ↗</a>
+      <button class="lang-button" id="langToggle" type="button" aria-label="Switch language">EN</button>
+    </div>
   </header>
 
   <main>
@@ -31,7 +37,7 @@
         <p class="hero-lead" data-i18n="heroLead">Plugins, ferramentas e experimentos para performances visuais, mapping e eventos ao vivo. Feitos para a comunidade VJ.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#plugins" data-i18n="explore">Explorar plugins <span>↘</span></a>
-          <a class="button button-quiet" href="https://pagaum.cafe/leandrosantosss" target="_blank" rel="noopener" data-i18n="supportMe">Apoie o projeto ↗</a>
+          <a class="button button-quiet" href="https://www.instagram.com/leandrone_x/" target="_blank" rel="noopener">Instagram ↗</a>
         </div>
         <div class="hero-note"><span class="tiny-dot"></span><span data-i18n="freeNote">Downloads gratuitos. Apoio é sempre voluntário.</span></div>
       </div>
@@ -60,7 +66,7 @@
         </div>
         <div class="plugin-info">
           <div class="plugin-meta"><span class="status-dot"></span><span data-i18n="available">PROJETO EM DESTAQUE</span><span class="pill">WINDOWS</span></div>
-          <h3>Mascara MultiPainel</h3>
+          <h3>Máscara MultiPainel</h3>
           <p data-i18n="pluginDescription">Crie máscaras com várias formas para simular múltiplos painéis dentro de uma única saída. Desenvolvido para fluxos de trabalho visuais com Resolume.</p>
           <div class="plugin-actions">
             <a class="button button-primary" href="https://github.com/leandro878787/Mascara-MultiPainel" target="_blank" rel="noopener" data-i18n="viewProject">Ver projeto no GitHub ↗</a>
@@ -69,6 +75,25 @@
           <p class="small-note" data-i18n="releaseNote">O link de download será atualizado aqui quando a versão compilada estiver publicada em Releases.</p>
         </div>
       </article>
+
+      <section class="demo-section" aria-labelledby="demo-title">
+        <div class="demo-heading">
+          <div><div class="eyebrow" data-i18n="demoEyebrow">VEJA EM AÇÃO</div><h3 id="demo-title" data-i18n="demoTitle">Demonstração do plugin</h3></div>
+          <span class="demo-tag">IMAGE / VIDEO</span>
+        </div>
+        <div class="demo-grid">
+          <div class="demo-placeholder demo-still">
+            <div class="demo-art-panels"><i></i><i></i><i></i><i></i></div>
+            <span class="demo-placeholder-label" data-i18n="imageSlot">ESPAÇO PARA IMAGEM / SCREENSHOT</span>
+          </div>
+          <div class="demo-placeholder demo-motion">
+            <div class="play-symbol">▶</div>
+            <strong data-i18n="videoSlot">Vídeo de demonstração em breve</strong>
+            <span data-i18n="videoHint">Aqui ficará uma prévia do plugin funcionando no Resolume.</span>
+          </div>
+        </div>
+        <p class="demo-note" data-i18n="demoNote">Esta área está preparada para receber screenshots e vídeos MP4/GIF do plugin. Os arquivos podem ser adicionados ao repositório quando estiverem prontos.</p>
+      </section>
       <div class="coming-soon"><span>＋</span><div><b data-i18n="moreSoon">Mais ferramentas a caminho</b><p data-i18n="moreSoonText">Novos projetos serão adicionados conforme forem ficando prontos.</p></div></div>
     </section>
 
@@ -92,7 +117,11 @@
   <footer class="site-footer wrap">
     <a class="brand brand-small" href="#"><span class="brand-mark">R<span>+</span></span><span class="brand-name">RESOLUME <b>PLUGINS LAB</b></span></a>
     <span>© <span id="year"></span> Resolume Plugins Lab</span>
-    <a href="https://github.com/leandro878787" target="_blank" rel="noopener">GitHub ↗</a>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/leandrone_x/" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="https://github.com/leandroooooo/resolume-plugins-lab" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://pagaum.cafe/leandrosantosss" target="_blank" rel="noopener" data-i18n="footerCoffee">Pague um café ↗</a>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>
