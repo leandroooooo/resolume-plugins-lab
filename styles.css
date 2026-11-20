@@ -37,3 +37,13 @@
 .approved-comments{margin-top:28px;padding:22px 24px;border:1px dashed #ffffff24;border-radius:13px}
 .approved-comments p{margin-bottom:0}
 @media(max-width:760px){.feedback-section{padding-top:42px;padding-bottom:55px}.feedback-layout{grid-template-columns:1fr}.feedback-form,.feedback-note{padding:20px}.feedback-heading h2{font-size:27px}}
+
+
+.support-qr{display:flex;align-items:center;justify-content:center;gap:34px;margin:28px auto 0;padding:25px;width:min(100%,620px);border:1px solid rgba(118,237,142,.22);border-radius:15px;background:linear-gradient(120deg,#111a24,#0d1420)}
+.support-qr-copy{max-width:340px}
+.support-qr-copy h3{font-size:20px;margin:9px 0}
+.support-qr-copy p{font-size:12px;line-height:1.8;color:var(--muted);margin:0 0 14px}
+.support-qr-image{display:block;flex-shrink:0;padding:10px;background:#fff;border-radius:12px;line-height:0;transition:transform .2s}
+.support-qr-image:hover{transform:translateY(-3px)}
+.support-qr-image img{display:block;width:170px;height:170px;max-width:100%}
+@media(max-width:520px){.support-qr{flex-direction:column-reverse;gap:18px;text-align:center;padding:20px}.support-qr-image img{width:190px;height:190px}}
