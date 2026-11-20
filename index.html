@@ -104,6 +104,45 @@
       </div>
       <p class="support-foot" data-i18n="supportFoot">Apoiar é opcional. Todos os plugins gratuitos continuarão disponíveis sem pagamento.</p>
     </section>
+  
+    <section class="feedback-section wrap" id="feedback">
+      <div class="feedback-heading">
+        <div class="eyebrow">FALE COM A GENTE</div>
+        <h2>Comentários e sugestões</h2>
+        <p>Tem uma ideia, encontrou um problema ou quer sugerir uma ferramenta? Envie sua mensagem!</p>
+      </div>
+      <div class="feedback-layout">
+        <form class="feedback-form" id="feedbackForm">
+          <input type="hidden" name="_subject" value="Nova mensagem — Resolume Plugins Lab">
+          <input type="hidden" name="_template" value="table">
+          <label>Seu nome<input type="text" name="name" placeholder="Como podemos te chamar?" maxlength="80" required></label>
+          <label>Seu e-mail <span>(opcional)</span><input type="email" name="email" placeholder="seuemail@exemplo.com"></label>
+          <label>Tipo de mensagem
+            <select name="type">
+              <option value="Sugestão">Sugestão</option>
+              <option value="Comentário">Comentário</option>
+              <option value="Problema / bug">Problema / bug</option>
+              <option value="Ideia de plugin">Ideia de plugin</option>
+            </select>
+          </label>
+          <label>Mensagem<textarea name="message" rows="5" maxlength="2000" placeholder="Escreva aqui sua mensagem..." required></textarea></label>
+          <input class="feedback-honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="button button-primary" type="submit" id="feedbackSubmit">Enviar mensagem ↗</button>
+          <p class="feedback-status" id="feedbackStatus" role="status" aria-live="polite"></p>
+        </form>
+        <aside class="feedback-note">
+          <div class="feedback-note-icon">✦</div>
+          <h3>Sua opinião ajuda a melhorar!</h3>
+          <p>As mensagens são recebidas em particular e analisadas antes de qualquer publicação.</p>
+          <span>Comentários só aparecem no site depois da aprovação.</span>
+        </aside>
+      </div>
+      <div class="approved-comments" id="approvedComments">
+        <div class="eyebrow">DA COMUNIDADE</div>
+        <p>Os comentários aprovados serão publicados aqui.</p>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer wrap">
