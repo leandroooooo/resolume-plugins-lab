@@ -56,3 +56,32 @@ mainNav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{
  menuToggle.textContent="☰";
 }));
 document.getElementById("year").textContent=new Date().getFullYear();
+\n
+const feedbackForm=document.getElementById("feedbackForm");
+if(feedbackForm){
+ const feedbackStatus=document.getElementById("feedbackStatus");
+ const feedbackSubmit=document.getElementById("feedbackSubmit");
+ feedbackForm.addEventListener("submit",async(event)=>{
+  event.preventDefault();
+  feedbackStatus.textContent="Enviando sua mensagem...";
+  feedbackSubmit.disabled=true;
+  try{
+   const response=await fetch("https://formsubmit.co/ajax/leandrosantosss@gmail.com",{
+    method:"POST",
+    headers:{"Content-Type":"application/json","Accept":"application/json"},
+    body:JSON.stringify(Object.fromEntries(new FormData(feedbackForm)))
+   });
+   const result=await response.json();
+   if(result.success===true || result.success==="true"){
+    feedbackStatus.textContent="Mensagem enviada! Obrigado por contribuir com o projeto.";
+    feedbackForm.reset();
+   }else{
+    feedbackStatus.textContent=result.message || "Não foi possível enviar. Confira o e-mail de ativação do formulário ou tente novamente.";
+   }
+  }catch(error){
+   feedbackStatus.textContent="Falha na conexão. Verifique sua internet e tente novamente.";
+  }finally{
+   feedbackSubmit.disabled=false;
+  }
+ });
+}
