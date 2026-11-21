@@ -58,7 +58,7 @@ mainNav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{
  menuToggle.textContent="☰";
 }));
 document.getElementById("year").textContent=new Date().getFullYear();
-\n
+
 const feedbackForm=document.getElementById("feedbackForm");
 if(feedbackForm){
  const feedbackStatus=document.getElementById("feedbackStatus");
