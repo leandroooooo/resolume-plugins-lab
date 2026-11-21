@@ -104,3 +104,16 @@ body{background-size:180% 180%,180% 180%,180% 180%,42px 42px,42px 42px}
 .omt-signal i:nth-child(4),.omt-signal i:nth-child(6){height:90%}
 .omt-signal i:nth-child(5){height:100%}
 @media(max-width:760px){.plugin-card-secondary{margin-top:16px}}
+
+/* MP3 Bridge card */
+.plugin-card-mp3{margin-top:20px}
+.mp3-visual{background:radial-gradient(ellipse at 50% 50%,#25463f,#141827 66%,#0b101b)}
+.mp3-wave{position:absolute;left:10%;right:10%;top:50%;height:116px;display:flex;align-items:center;justify-content:space-between;transform:translateY(-50%);opacity:.62}
+.mp3-wave i{width:5px;height:24%;border-radius:5px;background:#8df1c2;box-shadow:0 0 12px #6fe8ae}
+.mp3-wave i:nth-child(3n){height:52%}
+.mp3-wave i:nth-child(4n){height:76%}
+.mp3-wave i:nth-child(5n){height:100%}
+.mp3-disc{position:relative;z-index:2;width:126px;height:126px;border:1px solid #c8f6dd77;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle at center,#f4cb7355 0 9%,#1b2530 10% 24%,transparent 25%),repeating-radial-gradient(circle at center,#ffffff18 0 1px,transparent 2px 9px),linear-gradient(145deg,#263d42,#121826);box-shadow:0 0 34px #66dea633,inset 0 0 24px #76e3b522}
+.mp3-disc span{font:800 24px Manrope,Arial,sans-serif;letter-spacing:2px;color:#eaf6d1;text-shadow:0 0 14px #8df1c277}
+.mp3-disc small{font:8px 'DM Mono',monospace;letter-spacing:2px;color:#a8c6bc;margin-top:3px}
+@media(max-width:760px){.plugin-card-mp3{margin-top:16px}}
