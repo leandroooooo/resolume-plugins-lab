@@ -89,3 +89,18 @@ body{background-size:180% 180%,180% 180%,180% 180%,42px 42px,42px 42px}
   text-shadow:0 1px 3px rgba(0,0,0,.95),0 0 8px rgba(70,255,130,.35);
   letter-spacing:1.5px;
 }
+
+
+/* Cartão do OMT Receiver na coleção de plugins */
+.plugin-card-secondary{margin-top:20px}
+.omt-visual{background:radial-gradient(ellipse at 50% 50%,#163c48,#111827 68%,#0b101b)}
+.omt-screen{position:relative;z-index:2;width:142px;height:112px;border:1px solid rgba(110,226,245,.65);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(145deg,#163e4b,#101a2a);box-shadow:0 0 38px rgba(75,208,235,.2),inset 0 0 24px rgba(75,208,235,.12)}
+.omt-screen span{font:800 34px Manrope,Arial,sans-serif;letter-spacing:3px;color:#a5f1ff;text-shadow:0 0 18px rgba(87,220,245,.55)}
+.omt-screen small{font:8px 'DM Mono',monospace;letter-spacing:2px;color:#9db7c7;margin-top:4px}
+.omt-signal{position:absolute;left:12%;right:12%;top:50%;height:68px;display:flex;align-items:center;justify-content:space-between;transform:translateY(-50%);opacity:.48}
+.omt-signal i{width:5px;border-radius:5px;background:#68d9ed;box-shadow:0 0 12px #68d9ed;height:22%}
+.omt-signal i:nth-child(2),.omt-signal i:nth-child(8){height:42%}
+.omt-signal i:nth-child(3),.omt-signal i:nth-child(7){height:68%}
+.omt-signal i:nth-child(4),.omt-signal i:nth-child(6){height:90%}
+.omt-signal i:nth-child(5){height:100%}
+@media(max-width:760px){.plugin-card-secondary{margin-top:16px}}
